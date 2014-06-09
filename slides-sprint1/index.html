@@ -51,18 +51,17 @@
 					<h2>Agenda</h2>
 					<ol class="roman">
 						<li class="fragment">Objetivos</li>
-						<li class="fragment">OpenShift</li>
 						<li class="fragment">Google App Engine</li>
+                        <li class="fragment">OpenShift</li>
                         <li class="fragment">Elasticidad en el cloud computing</li>
-                        <li class="fragment">Conclusión</li>
 					</ol>
 				</section>
                 
                 <section>
 					<h2>Objetivos</h2>
                     <ul>
-				        <li class="fragment">Instalar en distintas instancias de OpenShift online: JBoss BRMS y JBoss Fuse.</li>
                         <li class="fragment">Instalar en distintas instancias de GAE: JBoss BRMS y JBoss Fuse.</li>
+                        <li class="fragment">Instalar en distintas instancias de OpenShift online: JBoss BRMS y JBoss Fuse.</li>
 				        <li class="fragment">Hacer pruebas de elasticidad sobre ambas PaaS con una aplicación básica.</li>
 				    </ul>
 				</section>
@@ -74,6 +73,7 @@
 							<img width="280" height="326" src="images/OpenShiftLogo.png" alt="logo">
 						</a>
                     </section>
+                    
                     <section>
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
                         <h2>Es una PaaS de RedHat</h2>
@@ -83,7 +83,18 @@
 						  <li class="fragment">Origin</li>
 						  <li class="fragment">Enterprise</li>
 					   </ul>
-                    </section>                    
+                    </section>
+                    
+                    <section>
+                        <h2>¿Cómo funciona?</h2>
+                        <img src="images/nodes-base.png" >
+                    </section>
+                    
+                    <section>
+                        <h2>¿Cómo funciona?</h2>
+                        <img src="images/zoom-base.png" >
+                    </section>
+                    
                     <section>
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
                         <h2>Compuesta por:</h2>
@@ -98,15 +109,16 @@
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
                         <h2>Plan contratado:</h2>
                         <ul>
-                            <li class="fragment">Para realizar las pruebas se contrató el plan Silver, que es el más completo.</li>
+                            <li class="fragment">Para realizar las pruebas se contrató el plan Silver.</li>
                             <li class="fragment">Está limitado a 16 gears.</li>
+                            <li class="fragment">Tipos: small, medium y large.</li>
                         </ul>
                     </section>
                     <section>
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
                         <h2>Formas de crear una aplicación:</h2>
                         <ul>
-                            <li class="fragment">Por linea de comando.</li>
+                            <li class="fragment">Por linea de comando RHC.</li>
                             <li class="fragment">A través de la aplicación Mobile.</li>
                             <li class="fragment">Eclipse plugin.</li>
                             <li class="fragment">Aplicación web.</li>
@@ -114,40 +126,81 @@
                     </section>
                     <section>
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
-                        <h2>Se crearon las siguientes aplicaciones:</h2>
+                        <h2>Flujo para el desarrollador:</h2>
                         <ul>
-                            <li class="fragment">JBoss AS Hello World.</li>
-                            <li class="fragment">JBoss Fuse.</li>
-                            <li class="fragment">BRMS (KIE).</li>
-                            <li class="fragment">JBoss BPM Suite 6.</li>
+                            <li class="fragment">Crear aplicación.</li>
+                            <li class="fragment">Configurar gear.</li>
+                            <li class="fragment">Push del código.</li>
+                            <li class="fragment">Build, test y deploy. Automático.</li>
                         </ul>
                     </section>
+                    
+                    <section>
+                        <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
+                        <h2>Diagrama de arquitectura Storm</h2>
+                        <img src="images/diagrama-arquitectura.png" >
+                    </section>
+                    
                     <section>
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
                         <h2>¿Cómo escalan horizontalmente las aplicaciones en OpenShift?</h2>
+                        <img src="images/scale-base3.png" >
                     </section>
+                    
                     <section>
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
-                        <h2>Ventajas</h2>
+                        <h2>Ventajas I</h2>
                         <ul>
                             <li class="fragment">Es orientado al desarrollo de software, automatizar procesos y evitar problemas de infraestructura.</li>
-                            <li class="fragment">El cliente rhc es muy completo y sencillo de usar.</li>
-                            <li class="fragment">Permite hacer backups (snapshots) y restores de manera sencilla por el cliente.</li>
+                            <li class="fragment">Posee distintos tipo de clientes; web, por línea de comando, Mobile y el plugin de eclipse.</li>
+                            <li class="fragment">El cliente rhc muy completo y sencillo de usar.</li>
+                            <li class="fragment">Permite hacer backups (snapshots) y restores de manera sencilla por el cliente rhc.</li>
                             <li class="fragment">Brinda facilidad para conectar servicios internos.</li>
-                            <li class="fragment">Provee varias aplicaciones  pre-configuradas.</li>
-                            <li class="fragment">Se posee completa administración de deploys; rollback, históricos, activación, desactivación.</li>
-                            <li class="fragment">Se pueden crear scripts para automatizar.</li>
-                            <li class="fragment">El cliente RHC es soportado por todos los sistemas operativos.</li>
-                            <li class="fragment">Usa tecnologías open source, lo que permite evitar el lock-in.</li>
+                            <li class="fragment">Permite creación de entornos flexibles y personalizados.</li>
+                            <li class="fragment">Provee varias aplicaciones pre-configuradas.</li>
+                            <li class="fragment">Permite crear aplicaciones basadas en otras, copiando su contenido y configuración.</li>
                         </ul>
                     </section>
+                                        
                     <section>
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
-                        <h2>Desventajas</h2>
+                        <h2>Ventajas II</h2>
                         <ul>
-                            <li class="fragment">No ofrece un buen monitor para las gears.</li>
+                            <li class="fragment">Posee completa administración de deploys; rollback, históricos, activación, desactivacion, etc.</li>
+                            <li class="fragment">Da la posibilidad de crear custom cartridges.</li>
+                            <li class="fragment">El acceso es simple a los logs a través del cliente rhc.</li>
+                            <li class="fragment">Las aplicaciones en su mayoría son escalables automáticamente, dependiendo de la carga. Agrega gears solo si las necesita y cuando baja la carga los elimina.</li>
+                            <li class="fragment">Se puede configurar de forma manual el contenedor a través de SSH.</li>
+                            <li class="fragment">Se pueden crear scripts para automatizar aún más la gestión de OpenShift.</li>
+                            <li class="fragment">Los gears pueden ser de diferentes tamaños.</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
+                        <h2>Ventajas III</h2>
+                        <ul>
+                            <li class="fragment">El cliente RHC es soportado por todos los sistemas operativos.</li>
+                            <li class="fragment">xPaaS</li>
+                            <li class="fragment">Usa tecnologías open source, lo que permite evitar el lock-in (ser rehén de una nube en particular con sus APIs). Esto permite poder abandonar el servicio en la nube o migrarlo a                                     otra cuando sea necesario, sin hacer ningún cambio.</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
+                        <h2>Desventajas I</h2>
+                        <ul>
+                            <li class="fragment">Se aclara en la web que OpenShift Online esta solo disponible para Estados Unidos, Canada y Europa. Pero esto no impide abonar el plan.</li>
+                            <li class="fragment">No ofrece un buen monitor para los gears. Posee uno llamado OpenShift Metrics pero sólo funciona cuando es una gear. Si ésta se configuró para escalar, ya no lo deja instalar porque                                  no tiene soporte para múltiples gears. Por otro lado OpenShift Metrics solo ofrece dos monitoreos básicos CPU y Memoria en lapsos de tiempo muy cortos.</li>
                             <li class="fragment">Escala bien, pero no tanto como otras opciones.</li>
-                            <li class="fragment">Una vez que se creó una aplicación con un tamaño especifico de gear (i.e. small), queda fijo y no se puede cambiar.</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
+                        <h2>Desventajas II</h2>
+                        <ul>
+                            <li class="fragment">Una vez que se creó una aplicación con un tamaño especifico de gear (i.e. small), queda fijo y no se puede cambiar (solo eliminando y creando la aplicación de vuelta). Si una                                         aplicación va a escalar siempre lo va a hacer en cierta cantidad pero mismo tamaño de gears.</li>
                             <li class="fragment">A la mayoría de los cartridges xPaaS no se le aplican actualizaciones de seguridad con excepción de JBoss EAP 6.</li>
                         </ul>
                     </section>
