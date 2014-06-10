@@ -78,7 +78,7 @@
                         <img width="123" height="100" src="images/Google-app-engine.png" alt="logo">
                         <h2>PaaS de Google con soporte para aplicaciones escritas en varios lenguajes</h2>
                         <ul>
-                            <li class="fragment">Diseño basado en escalabilidad, confiablilidad y disponibilidad.</li>
+                            <li class="fragment">Diseño basado en escalabilidad, confiabilidad y disponibilidad.</li>
                             <li class="fragment">Escalabilidad horizontal, orientada a mas instancias de HW menos potentes.</li>
                             <li class="fragment">Aplicaciones usando la misma insfraestructura que los desarrollos de Google.</li>
                         </ul>
@@ -89,9 +89,9 @@
                         <ul>
                             <li class="fragment">Las aplicaciones pertenecen a un proyecto.</li>
                             <li class="fragment">Los proyectos contienen un ID.</li>
-                            <li class="fragment">Las aplicaciones son versiosnes dentro de un proyecto.</li>
+                            <li class="fragment">Las aplicaciones son versiones dentro de un proyecto.</li>
                             <li class="fragment">Cada versión posee un balanceador de carga.</li>
-                            <li class="fragment">Las versiones son ejecutada en ambiente Sandbox.</li>
+                            <li class="fragment">Las versiones son ejecutadas en un ambiente Sandbox.</li>
                             <li class="fragment">Integración con las APIs de Google.</li>
                             <li class="fragment">Interactúan con otros servicios de Google como:</li>
                             <li class="fragment">DataStore.</li>
@@ -117,7 +117,7 @@
                         <ul>
                             <li class="fragment">Visualizar el estado de las tareas programadas.</li>
                             <li class="fragment">Ver registros de errores.</li>
-                            <li class="fragment">Configuracnes de cuotas como:</li>
+                            <li class="fragment">Configuraciones de cuotas como:</li>
                             <li class="fragment">Solicitudes por tipo.</li>
                             <li class="fragment">Latencia.</li>
                             <li class="fragment">Tráfico.</li>
@@ -200,7 +200,7 @@
                         <ul>
                             <li class="fragment">Para realizar las pruebas se contrató el plan Silver.</li>
                             <li class="fragment">Está limitado a 16 gears.</li>
-                            <li class="fragment">Tipos: small, medium y large.</li>
+                            <li class="fragment">Tipos de gears: small, medium y large.</li>
                         </ul>
                     </section>
                     <section>
@@ -271,7 +271,7 @@
                         <ul>
                             <li class="fragment">El cliente RHC es soportado por todos los sistemas operativos.</li>
                             <li class="fragment">xPaaS</li>
-                            <li class="fragment">Usa tecnologías open source, lo que permite evitar el lock-in (ser rehén de una nube en particular con sus APIs). Esto permite poder abandonar el servicio en la nube o migrarlo a                                     otra cuando sea necesario, sin hacer ningún cambio.</li>
+                            <li class="fragment">Usa tecnologías open source, lo que permite evitar el lock-in. </li>
                         </ul>
                     </section>
                     
@@ -279,8 +279,8 @@
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
                         <h2>Desventajas I</h2>
                         <ul>
-                            <li class="fragment">Se aclara en la web que OpenShift Online esta solo disponible para Estados Unidos, Canada y Europa. Pero esto no impide abonar el plan.</li>
-                            <li class="fragment">No ofrece un buen monitor para los gears. Posee uno llamado OpenShift Metrics pero sólo funciona cuando es una gear. Si ésta se configuró para escalar, ya no lo deja instalar porque                                  no tiene soporte para múltiples gears. Por otro lado OpenShift Metrics solo ofrece dos monitoreos básicos CPU y Memoria en lapsos de tiempo muy cortos.</li>
+                            <li class="fragment">OpenShift Online esta solo disponible para Estados Unidos, Canada y Europa.</li>
+                            <li class="fragment">No ofrece un buen monitor para los gears. </li>
                             <li class="fragment">Escala bien, pero no tanto como otras opciones.</li>
                         </ul>
                     </section>
@@ -289,8 +289,9 @@
                         <img width="108" height="100" src="images/openshift_logo_large.gif" alt="logo">
                         <h2>Desventajas II</h2>
                         <ul>
-                            <li class="fragment">Una vez que se creó una aplicación con un tamaño especifico de gear (i.e. small), queda fijo y no se puede cambiar (solo eliminando y creando la aplicación de vuelta). Si una                                         aplicación va a escalar siempre lo va a hacer en cierta cantidad pero mismo tamaño de gears.</li>
+                            <li class="fragment">Los gears no se pueden redimensionar.</li>
                             <li class="fragment">A la mayoría de los cartridges xPaaS no se le aplican actualizaciones de seguridad con excepción de JBoss EAP 6.</li>
+                            <li class="fragment">Los xPaaS no escalan.</li>
                         </ul>
                     </section>
 
